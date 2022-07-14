@@ -5,14 +5,14 @@ export default {
     siteTitle: "FrontEnd Wiki",
     sidebar: {
       "/basic/": sidebarBasic(),
+      "/interviews/": sidebarInterviews(),
     },
     nav: nav(),
     socialLinks: [
-      { icon: "github", link: "https://github.com/franklin23" },
+      { icon: "github", link: "https://github.com/FrankLin23/Personal-Wiki" },
       { icon: "twitter", link: "..." },
       { icon: "discord", link: "..." },
     ],
-
     editLink: {
       pattern: "https://github.com/vuejs/vitepress/edit/main/docs/:path",
       text: "Edit this page on GitHub",
@@ -62,7 +62,7 @@ function nav() {
     },
     {
       text: "Interviews",
-      link: "https://github.com",
+      link: "/interviews/javascript/",
     },
   ];
 }
@@ -91,7 +91,7 @@ function sidebarBasic() {
       items: [
         {
           text: "Basic",
-          link: "...",
+          link: "/basic/javascript/basic",
         },
         {
           text: "Variables,Scope and Memory",
@@ -114,6 +114,27 @@ function sidebarBasic() {
           link: "...",
         },
       ],
+    },
+  ];
+}
+
+function sidebarInterviews() {
+  return [
+    {
+      text: "JavaScript/TypeScript",
+      collapsible: true,
+      items: [
+        { text: "Introduction", link: "/interviews/javascript/" },
+        {
+          text: "类型与检测方法",
+          link: "/interviews/javascript/types",
+        },
+      ],
+    },
+    {
+      text: "Browser",
+      collapsible: true,
+      items: [{ text: "Browser", link: "/interviews/browser/" }],
     },
   ];
 }

@@ -1,6 +1,5 @@
 ---
 title: Frontend Wiki
-editLink: true
 layout: home
 
 hero:
